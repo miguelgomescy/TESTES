@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #121317;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.wrapper{
+    position: absolute;
+    width: 80vw;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+
+.voltar{
+    background-color: #18f98f;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #121317;
+    font-weight: 600;
+}
+
+
+.voltar:hover{
+    transition: 0.5s ease-in;
+    background-color: #2a98d8;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 28vmin;
+    height: 28vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    background-color: #21242b;
+    border-bottom: #18f98f 10px solid;
+}
+
+i{
+    color: #18f98f;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+span.num{
+    color: #ffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+span.text{
+    color: #e0e0e0;
+    font-size: 20px;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400px;
+    line-height: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper{
+        width: 85vw;
+    }
+
+    .container{
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .wrapper{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .container{
+        height: 30vmin;
+        width: calc(50% - 40px);
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .wrapper{
+        gap: 15px;
+    }
+
+    .container{
+        height: 25vmin;
+        width: 100%;
+        font-size: 8px;
+    }
+}
