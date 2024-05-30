@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+
+*{
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #f0f8ff;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 100px;
+    background-color: bisque;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: bisque;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container-top{
+    background-color: green;
+    width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./img/templario.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+
+.saudacao-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px; 
+    background-color: #f5000030; 
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.saudacao-top h1{
+    background-color: transparent; 
+    color: #fff;
+    font-size: 40px;
+}
+
+.saudacao-top p{
+    background-color: transparent; 
+    color: #fff;
+    font-size: 20px;
+}
+
+.saudacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;  
+    background-color: transparent;
+}
+
+.h1-mid{
+    background-color: transparent;
+    font-size: 50px;
+    color: #8e0000;
+    font-family: 'Jaro', sans-serif;
+}
+
+.container-mid{
+    margin-top: 30px;
+    width: 90%;
+    background-color: bisque;
+
+}
+
+.testes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    background-color: bisque;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.linha{
+    display: flex;
+    gap: 30px;
+    background-color: bisque;
+    transition: 0.5s ease-in;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.projetos{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    border-radius: 50px 50px 0px 0px;
+    margin-bottom: 10px;
+    
+}
+
+.linha:hover .projetos {
+    background-color: #570000;
+    color: #fff; /* Cor do texto */
+}
+
+.linha:hover h3 {
+    text-decoration: underline;
+    color:  #570000;
+}
+
+
+.p1{
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/templario.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px 50px 0px 0px;
+}
+
+
+
+.p-mngr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    gap: 10px;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    background-color: transparent;
+    font-family: 'Jaro', sans-serif;
+}
+
